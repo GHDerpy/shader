@@ -22,8 +22,8 @@ void main()
 	v_TexCoord = texCoord;
 	uTexCoordMin = vec2(0.0, 0.0);
 	uTexCoordMax = vec2(1.0, 1.0);
-	v_TexCoord2 = mix(uTexCoordMin, uTexCoordMax, texCoord.xy);
-	//v_TexCoord2 = vec2(texCoord.x, texCoord.y);
+	v_TexCoord = mix(uTexCoordMin, uTexCoordMax, texCoord.xy);
+	v_TexCoord2 = vec2(texCoord.x, texCoord.y);
 };
 
 #shader fragment
